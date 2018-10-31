@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreRssMiddleware", "AspNetCoreRssMiddleware\AspNetCoreRssMiddleware.csproj", "{76F4C7A4-2B92-458D-AAF7-5903FDAD8245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebApp", "SampleWebApp\SampleWebApp.csproj", "{29F455CC-A797-4442-A65C-D7E705C8A19B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76F4C7A4-2B92-458D-AAF7-5903FDAD8245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F4C7A4-2B92-458D-AAF7-5903FDAD8245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F4C7A4-2B92-458D-AAF7-5903FDAD8245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F4C7A4-2B92-458D-AAF7-5903FDAD8245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F455CC-A797-4442-A65C-D7E705C8A19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F455CC-A797-4442-A65C-D7E705C8A19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F455CC-A797-4442-A65C-D7E705C8A19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F455CC-A797-4442-A65C-D7E705C8A19B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
