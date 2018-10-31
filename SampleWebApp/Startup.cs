@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
+using AspNetCoreRssMiddleware;
+
 namespace SampleWebApp
 {
     public class Startup
@@ -25,10 +27,23 @@ namespace SampleWebApp
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseRss(new RssFeedDescriptor("sampleproj", "sample RSS feed", category: "Software Engineering"), new DummyRssItemDataSource());
+
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
             });
         }
+    }
+
+    public class DummyRssItemDataSource : IRssItemDataSource
+    {
+        public IEnumerable<RssFeedItem> RssItems =>
+        new List<RssFeedItem>
+        {
+            new RssFeedItem("Post1", "Description of post 1", "gergo@kalapos.net (Gergely Kalapos)", "ShowPost/Post1", new DateTime(2017, 2, 4, 1, 23, 1)),
+            new RssFeedItem("Post2", "Description of post 2", "gergo@kalapos.net (Gergely Kalapos)", "ShowPost/Post2", new DateTime(2018, 5, 13, 9, 11, 43)),
+            new RssFeedItem("Post3", "Description of post 3", "gergo@kalapos.net (Gergely Kalapos)", "ShowPost/Post3", new DateTime(2018, 9, 13, 17, 46, 5))
+        };
     }
 }
