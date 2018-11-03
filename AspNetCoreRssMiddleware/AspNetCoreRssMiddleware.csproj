@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Gergely Kalapos (https://kalapos.net)</Authors>
+    <PackageProjectUrl>https://github.com/gregkalapos/RSSMiddleware</PackageProjectUrl>
+    <Description>RSS Middleware for ASP.NET Core</Description>
   </PropertyGroup>
 
   <ItemGroup>
